@@ -1,3 +1,2 @@
-# Lab5_2020
-Суть завдання: створити програму, що дозволяє переводити час у форматі hh:mm:ss у секунди та навпаки, використовуючи перевантаження функцій.
-Як запустити: у 8 рядочку cpp файлу в дужках ввести або години, хвилини, секунди через кому (переведеться в секунди); або ввести лише секунди(переведуться в години, хвилини, секунди) та запустити програму.
+the task is to creaate a program which allows you to convert time from hh:mm:ss to seconds and vice versa, using function overloading.
+To run the code you should in the cpp file in 8th line in brackets write down hours, minutes, seconds (will be changed to seconds) or seconds (will be changed to hours, minutes, seconds).

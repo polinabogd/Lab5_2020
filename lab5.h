@@ -1,23 +1,24 @@
 #pragma once
 #include <iostream>
-#include <string>
-#include <cmath>
-#include <tuple>
+#include <math.h>
+#define findHours 3600
+#define findMinutes 60
 
 using namespace std;
 class Time{
     public:
     int hh, mm, ss;
-    void convert(int ss)
+
+    void ConvertTime(int ss)
     {
-        hh = trunc(ss/3600);
-        mm = trunc((ss%3600)/60);
-        ss = trunc(mm%60);
-        cout<<hh<<":"<<mm<<":"<<ss<<endl; 
-    }
-    void convert(int hh, int mm, int ss)
-    {
-        cout<<hh*3600 + mm*60 + ss<<endl;
+        hh = trunc(ss / findHours);
+        mm = trunc((ss % findHours) / findMinutes);
+        ss = trunc(mm % findMinutes);
+        cout << hh << ":" << mm << ":"<< ss << endl;
     }
 
+    void ConvertTime(int hh, int mm, int ss)
+    {
+        cout << hh * findHours + mm * findMinutes + ss << endl;
+    }
 };
