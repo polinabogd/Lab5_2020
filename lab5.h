@@ -4,10 +4,9 @@
 #define findHours 3600
 #define findMinutes 60
 
-using namespace std;
 class Time{
     public:
-    int hh, mm, ss;
+        int hh, mm, ss;
 
     void ConvertTime(int ss)
     {
